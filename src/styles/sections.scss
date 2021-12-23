@@ -1,0 +1,16 @@
+@charset "utf-8";
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    padding: 0 10%;
+}
+
+.section-my-work {
+    flex-direction: column;
+}

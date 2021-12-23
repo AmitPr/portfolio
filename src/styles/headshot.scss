@@ -1,0 +1,22 @@
+@charset "utf-8";
+.headshot-container {
+    position: relative;
+    height: 100%;
+    overflow: visible;
+    img {
+        top: 0;
+        left: 0;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    .headshot {
+        mask-image: url(/images/blob.svg);
+        mask-repeat: no-repeat;
+        mask-position: center bottom;
+        position: relative;
+    }
+    .blob {
+        position: absolute;
+        z-index: -1;
+    }
+}

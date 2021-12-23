@@ -1,0 +1,96 @@
+@charset "utf-8";
+@use "sass:list";
+@keyframes text-swapper-anim {
+    0% {
+        opacity: 0;
+        content: "Developer";
+    }
+    2.5% {
+        opacity: 1;
+        content: "Developer";
+    }
+    17.5% {
+        opacity: 1;
+        content: "Developer";
+    }
+    20% {
+        opacity: 0;
+        content: "Developer";
+    }
+    20.01% {
+        opacity: 0;
+        content: "Student";
+    }
+    22.5% {
+        opacity: 1;
+        content: "Student";
+    }
+    37.5% {
+        opacity: 1;
+        content: "Student";
+    }
+    40% {
+        opacity: 0;
+        content: "Student";
+    }
+    40.01% {
+        opacity: 0;
+        content: "Thinker";
+    }
+    42.5% {
+        opacity: 1;
+        content: "Thinker";
+    }
+    57.5% {
+        opacity: 1;
+        content: "Thinker";
+    }
+    60% {
+        opacity: 0;
+        content: "Thinker";
+    }
+    60.01% {
+        opacity: 0;
+        content: "Chef";
+    }
+    62.5% {
+        opacity: 1;
+        content: "Chef";
+    }
+    77.5% {
+        opacity: 1;
+        content: "Chef";
+    }
+    80% {
+        opacity: 0;
+        content: "Chef";
+    }
+    80.01% {
+        opacity: 0;
+        content: "Creator";
+    }
+    82.5% {
+        opacity: 1;
+        content: "Creator";
+    }
+    97.5% {
+        opacity: 1;
+        content: "Creator";
+    }
+    100% {
+        opacity: 0;
+        content: "Creator";
+    }
+}
+
+.text-swapper {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+.text-swapper:after {
+    content: "";
+    animation: text-swapper-anim 6.5s linear infinite;
+    text-decoration: underline solid #4FC3F7 4px;
+}
