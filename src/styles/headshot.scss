@@ -11,6 +11,7 @@
     }
     .headshot {
         mask-image: url(/images/blob.svg);
+        -webkit-mask-image: url(/images/blob.svg);
         mask-repeat: no-repeat;
         mask-position: center bottom;
         position: relative;

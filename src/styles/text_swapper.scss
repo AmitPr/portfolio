@@ -1,5 +1,6 @@
 @charset "utf-8";
 @use "sass:list";
+
 @keyframes text-swapper-anim {
     0% {
         opacity: 0;
@@ -87,10 +88,18 @@
     display: inline;
     padding: 0;
     margin: 0;
+    &.safari{
+        text-decoration: underline;
+        text-decoration-color: #4FC3F7;
+        text-decoration-style: solid;
+        text-decoration-thickness: 4px;
+        transition: opacity 0.15s ease-in-out;
+    }
 }
 
 .text-swapper:after {
     content: "";
     animation: text-swapper-anim 6.5s linear infinite;
+    -webkit-animation: none;
     text-decoration: underline solid #4FC3F7 4px;
 }
