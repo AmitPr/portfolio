@@ -88,7 +88,7 @@
     display: inline;
     padding: 0;
     margin: 0;
-    &.safari{
+    &:not(.no-script){
         text-decoration: underline;
         text-decoration-color: #4FC3F7;
         text-decoration-style: solid;
@@ -97,9 +97,8 @@
     }
 }
 
-.text-swapper:after {
+.no-script:after {
     content: "";
     animation: text-swapper-anim 6.5s linear infinite;
-    -webkit-animation: none;
     text-decoration: underline solid #4FC3F7 4px;
 }

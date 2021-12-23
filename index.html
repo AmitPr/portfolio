@@ -85,7 +85,7 @@
                     <div>
                         <h1>Hi! My name is Amit Prasad.</h1>
                         <h3>I am a
-                            <div class="text-swapper"></div>
+                            <div class="text-swapper no-script"></div>
                         </h3>
                     </div>
                 </div>
@@ -152,22 +152,19 @@
     </div>
     <script type="text/javascript">
         var words = ["Developer", "Student", "Thinker", "Chef", "Creator"]
-        var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
         var ts = document.querySelector(".text-swapper");
         var i = 1;
-        if (isSafari){
-            ts.classList.add("safari");
-            ts.innerHTML = "Developer";
-            setInterval(function(){
-                ts.style.opacity = "0";
-                setTimeout(function(){
-                    ts.innerHTML = words[i];
-                    ts.style.opacity = "1";
-                    i++;
-                    if (i == words.length) i = 0;
-                }, 150); 
-            }, 1300);
-        }
+        ts.classList.remove("no-script");
+        ts.innerHTML = "Developer";
+        setInterval(function () {
+            ts.style.opacity = "0";
+            setTimeout(function () {
+                ts.innerHTML = words[i];
+                ts.style.opacity = "1";
+                i++;
+                if (i == words.length) i = 0;
+            }, 150);
+        }, 1300);
     </script>
 </body>
 
