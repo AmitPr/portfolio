@@ -152,15 +152,27 @@
         var i = 1;
         ts.classList.remove("no-script");
         ts.innerHTML = "Developer";
-        setInterval(function () {
+        setInterval(function() {
             ts.style.opacity = "0";
-            setTimeout(function () {
+            setTimeout(function() {
                 ts.innerHTML = words[i];
                 ts.style.opacity = "1";
                 i++;
                 if (i == words.length) i = 0;
             }, 150);
         }, 1300);
+
+        //Easter egg :)
+        var num6 = 0;
+        document.onkeydown = function(evt) {
+            evt = evt || window.event;
+            if (evt.keyCode == '54') {
+                num6++;
+                if (num6 == 3) {
+                    words = ["Goose", "Goofball", "Prankster"]
+                }
+            }
+        };
     </script>
 </body>
 
