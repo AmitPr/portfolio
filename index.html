@@ -164,13 +164,13 @@
 
         //Easter egg :)
         var num6 = 0;
+        var kkeys = [],
+            konami = "38,38,40,40,37,39,37,39,66,65";
         document.onkeydown = function(evt) {
             evt = evt || window.event;
-            if (evt.keyCode == '54') {
-                num6++;
-                if (num6 == 3) {
-                    words = ["Goose", "Goofball", "Prankster"]
-                }
+            kkeys.push(evt.keyCode);
+            if (kkeys.toString().indexOf(konami) >= 0) {
+                words = ["Goose", "Goofball", "Prankster"]
             }
         };
     </script>
