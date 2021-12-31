@@ -4,7 +4,8 @@ html {
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
 }
-.body-container{
+
+.body-container {
     overflow-x: hidden;
 }
 
@@ -39,9 +40,20 @@ img {
     height: auto;
 }
 
-a {
+a:not(.styled-link) {
     text-decoration: none;
     color: inherit;
+}
+
+a.styled-link {
+    &:link,
+    &:visited {
+        color: #1b4ebd;
+    }
+    &:active,
+    &:hover {
+        color: #111499;
+    }
 }
 
 h1 {

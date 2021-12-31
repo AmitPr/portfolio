@@ -1,8 +1,9 @@
 @charset "utf-8";
 .headshot-container {
     position: relative;
-    height: 100%;
+    // height: 100%;
     overflow: visible;
+    margin: auto 0;
     img {
         top: 0;
         left: 0;
@@ -20,5 +21,12 @@
     .blob {
         position: absolute;
         z-index: -2;
+    }
+    .shadow {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: -3;
+        box-shadow: 0 0 100px 100px rgba(0, 0, 0, 0.5);
     }
 }
